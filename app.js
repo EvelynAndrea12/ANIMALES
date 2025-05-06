@@ -29,8 +29,8 @@ function cargarAnimales(lista) {
     card.innerHTML = `
       <h3>${animal.nombre}</h3>
       ${animal.imagen ? <img src="${animal.imagen}" alt="${animal.nombre}"/> : ""}
-      ${animal.video ? <video controls><source src="${animal.video}" type="video/mp4"></video> : ""}
-      ${animal.sonido ? <audio controls><source src="${animal.sonido}" type="audio/mp3"></audio> : ""}
+      {animal.video ? <video controls><source src="${animal.video}" type="video/mp4"></video> : ""}
+      {animal.sonido ? <audio controls><source src="${animal.sonido}" type="audio/mp3"></audio> : ""}
     `;
 
     galeria.appendChild(card);
